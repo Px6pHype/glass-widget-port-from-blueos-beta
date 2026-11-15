@@ -28,7 +28,7 @@ class CalendarWidgetProvider : AppWidgetProvider() {
 
             // Смена даты, времени, часового пояса или языка: возвращаемся к текущему месяцу.
             Intent.ACTION_DATE_CHANGED,
-            Intent.ACTION_TIME_SET,
+            Intent.ACTION_TIME_CHANGED,
             Intent.ACTION_TIMEZONE_CHANGED,
             Intent.ACTION_LOCALE_CHANGED -> {
                 clearOffsets(context)
